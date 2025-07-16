@@ -112,6 +112,17 @@ function crearRamos() {
       } else if (ramo.requisitos && ramo.requisitos.length) {
         const cumplidos = ramo.requisitos.every(req => estadoRamos[req]);
         if (!cumplidos) div.classList.add('bloqueado');
+      } else if (ramo.codigo === "AS424" && creditosAprobados < 125) {
+        div.classList.add('bloqueado');
+      } else if ((ramo.codigo === "AS425" || ramo.codigo === "AS428") && creditosAprobados < 141) {
+        div.classList.add('bloqueado');
+      const creditosDiv = document.createElement('div');
+        creditosDiv.style.textAlign = 'center';
+        creditosDiv.style.margin = '30px';
+        creditosDiv.innerHTML = `<strong>Créditos Aprobados: ${creditosAprobados}</strong>`;
+        contenedor.appendChild(creditosDiv);
+}
+
       } else {
         estadoRamos[ramo.codigo] = false;
       }
@@ -122,6 +133,13 @@ function crearRamos() {
 
     contenedor.appendChild(semCont);
   }
+  // Créditos aprobados totales
+let creditosAprobados = 0;
+ramos.forEach(r => {
+  if (estadoRamos[r.codigo]) {
+    creditosAprobados += r.creditos;
+  }
+});
 }
 
 function aprobarRamo(ramo) {
