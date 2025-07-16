@@ -72,14 +72,14 @@ const ramos = [
   // ----- 9no semestre -----
   { codigo: "AS426", nombre: "CONTROL DE CONTAMINACIÓN ATMOSFÉRICA", creditos: 3, semestre: 9, requisitos: ["AS702"] },
   { codigo: "AS903", nombre: "COSTOS Y PRESUPUESTOS", creditos: 2, semestre: 9, requisitos: ["AS704", "AS803"] },
-  { codigo: "AS424", nombre: "ELECTIVA IA", creditos: 2, semestre: 9, creditosMin: 125 },
+  { codigo: "AS424", nombre: "ELECTIVA IA", creditos: 3, semestre: 9, creditosMin: 125 },
   { codigo: "FC407", nombre: "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS EN INGENIERÍA", creditos: 3, semestre: 9, requisitos: ["AS806"], desbloquea: ["AS462"] },
   { codigo: "AS902", nombre: "SEGURIDAD Y SALUD EN EL TRABAJO", creditos: 3, semestre: 9, requisitos: ["AS705"] },
 
   // ----- 10mo semestre -----
   { codigo: "AS462", nombre: "COMUNIDAD Y GESTIÓN EMPRESARIAL", creditos: 3, semestre: 10, requisitos: ["FC407"] },
-  { codigo: "AS425", nombre: "ELECTIVA IB", creditos: 2, semestre: 10, creditosMin: 141 },
-  { codigo: "AS428", nombre: "ELECTIVA II", creditos: 2, semestre: 10, creditosMin: 141 },
+  { codigo: "AS425", nombre: "ELECTIVA IB", creditos: 3, semestre: 10, creditosMin: 141 },
+  { codigo: "AS428", nombre: "ELECTIVA II", creditos: 3, semestre: 10, creditosMin: 141 },
   { codigo: "AS102", nombre: "PROYECTO DE GRADO", creditos: 2, semestre: 10, requisitos: ["AS805"] },
   { codigo: "AS101", nombre: "SISTEMAS DE GESTIÓN", creditos: 3, semestre: 10, requisitos: ["AS804"] }
 ];
