@@ -156,6 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
   botonReiniciar.innerText = 'Reiniciar Malla';
   botonReiniciar.className = 'reiniciar';
   botonReiniciar.onclick = reiniciarMalla;
-  document.body.prepend(botonReiniciar);
+  document.body.appendChild(botonReiniciar);
 });
 
