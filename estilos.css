@@ -1,1 +1,95 @@
+/* estilos.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9;
+}
+
+.titulo {
+  text-align: center;
+  background-color: #43a047;
+  color: white;
+  padding: 1em;
+  margin: 0;
+}
+
+#malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.semestre-container {
+  border: 2px solid #388e3c;
+  background-color: #c8e6c9;
+  border-radius: 10px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.semestre-title {
+  background-color: #66bb6a;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.ramo {
+  background-color: white;
+  border: 2px solid #66bb6a;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+}
+
+.ramo.aprobado {
+  background-color: #a5d6a7;
+  border-color: #388e3c;
+  text-decoration: line-through;
+  color: #2e7d32;
+}
+
+.ramo.bloqueado {
+  background-color: #f0f0f0;
+  color: #aaa;
+  border-color: #ccc;
+  pointer-events: none;
+}
+
+.ramo .info {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #555;
+}
+
+.reiniciar {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 20px;
+  display: block;
+}
+
+.reiniciar:hover {
+  background-color: #b71c1c;
+}
 
