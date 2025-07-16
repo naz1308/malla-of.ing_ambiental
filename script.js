@@ -125,9 +125,15 @@ function crearRamos() {
       const codigo = document.createElement("div");
       codigo.className = "info";
       codigo.textContent = `Código: ${ramo.codigo}`;
+      
+      const creditos = document.createElement("div");
+      creditos.className = "info";
+      creditos.textContent = `Créditos: ${ramo.creditos}`;
+
 
       div.appendChild(nombre);
       div.appendChild(codigo);
+      div.appendChild(creditos);
 
       if (estadoRamos[ramo.codigo]) {
         div.classList.add("aprobado");
