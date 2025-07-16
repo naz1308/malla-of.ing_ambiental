@@ -87,19 +87,22 @@ body {
 }
 
 .reiniciar {
-  background-color: #c62828;
+  background-color: #66bb6a;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1em;
   cursor: pointer;
-  border-radius: 6px;
-  margin: 20px auto;
+  border-radius: 8px;
+  margin: 40px auto 30px auto;
   display: block;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .reiniciar:hover {
-  background-color: #b71c1c;
+  background-color: #43a047;
+  transform: scale(1.05);
 }
+
